@@ -1,0 +1,125 @@
+body {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: normal;
+  letter-spacing: normal;
+  word-spacing: 2px;
+  border: 2px groove rgba(167, 159, 159, 0.247);
+  border-radius: 4px;
+  padding: 10px 20px 10px 20px; /*Os valores se aplicam no sentido relogio*/
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 10px;
+  background-image: url(../img/sobre-background.jpg);
+  color: rgb(90, 95, 100);
+  font-style: normal;
+  border: 0.1px solid #333;
+  border-radius: 4px;
+}
+
+h2 {
+  margin-top: 30px;
+  border-bottom: 2px solid #333;
+  border-radius: 4px;
+  font-style: italic;
+}
+p {
+  flex-direction: row;
+  font-size: 14px;
+  font-style: normal;
+  text-indent: 15px;
+  padding: 0 45px;
+}
+p::first-letter {
+  font-weight: bold;
+}
+p::first-line {
+  font-variant: small-caps;
+}
+:not(p) + p::first-line {
+  font-variant: small-caps;
+}
+iframe {
+  margin-left: 200px;
+}
+article + p {
+}
+figure {
+  margin: 15px;
+  padding: 30px;
+  background-color: #f2eded;
+  border: 1px solid #ccc;
+  text-align: center;
+  background: linear-gradient(to bottom, white, rgba(77, 168, 243, 0.842));
+  opacity: 0.9;
+}
+figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+#familia-pelho {
+  float: right;
+}
+
+#centro-distribuicao {
+  margin-right: auto;
+  margin-left: auto;
+  width: 550px;
+}
+footer.container {
+  position: relative;
+}
+
+footer {
+  background-image: url(../img/fundo-rodape.png);
+  padding: 20px;
+  clear: both;
+}
+.logo-tipo img {
+  position: relative;
+  top: 20px;
+  left: 4px;
+}
+.social {
+  position: absolute;
+  bottom: 35px;
+  right: 430px;
+}
+
+.social a {
+  margin-right: 8px;
+  width: 32px;
+  height: 32px;
+  display: block;
+  text-indent: -9999px;
+}
+.social li {
+  float: left;
+  margin-left: 25px;
+}
+
+.social a[href*="facebook.com"] {
+  background-image: url(../img/facebook.png);
+}
+.social a[href*="twitter.com"] {
+  background-image: url(../img/twitter.png);
+}
+.social a[href*="plus.google.com"] {
+  background-image: url(../img/googleplus.png);
+}
+@media (max-width: 939px) {
+  .container {
+    width: 96%;
+  }
+}
